@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: #3E432E;
+            color:white
+        }
+        #principalMenu{
+            display: flex;
+        }
+
+        #principalMenu{
+            width: 100%;
+            background-color: #000000;
+            opacity: 0.8;
+            display: flex;
+            align-items: center;            
+        }
+
+        #logo{
+            margin: 15px;
+            width: 15%;
+            height: 70px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #logoImg{
+            width: 100%;
+            height: 100%;
+        }
+        #menu{
+            width: 70%;
+            margin-left: 250px;
+            margin-right: 250px;
+        }
+
+        #ulMenu{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #liMenu{
+            list-style: none;
+            color: white;
+            background-color: #3E432E;
+            font-weight: bold;
+            /* background-color: orange; */
+            padding: 10px;
+            width: 130px;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+            border-radius: 15px;
+        }
+
+        #PrincipalMultHead{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 400px;
+            /* border: 2px solid black; */
+        }
+
+        /* #headLine{
+            width: 100%;
+            display: flex;
+            align-items:center;
+            justify-content: space-around;
+            height: 330px;
+        } */
+
+        #containerHeadLine{
+            padding: 25px;
+            margin: 20px;
+            background-color: #616F39;
+            width: 620px;
+            height: 320px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        h2{
+            padding-top: 30px;
+            padding-bottom: 15px;
+            color: black;
+        }
+
+        p{
+            padding-top: 15px;
+            padding-bottom: 30px;
+            color: black;
+        }
+
+        #PrincipalHeadline{display: flex;
+            justify-content: center;
+            height: 650px;            
+            /* background-image: url("https://images.pexels.com/photos/1069798/pexels-photo-1069798.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+            background-size: cover;
+            background-repeat : no-repeat; */
+        }
+
+        #imagenPrincipal{
+            height: 650px;
+            width: 90%;
+            border-radius: 5px;
+            border: solid 3px #616F39;
+        }
+
+        #principalImagenes{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        #imagenes{
+            height: 180px;
+            width: 180px;
+            background-color: white;
+            border-radius: 40px;
+            border: solid 1px #A7D129;
+        }
+
+        #secImagen{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            background-color: #616F39;
+            margin: 25px;
+            width: 30%;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        #buttonImage{
+            width: 120px;
+            height: 30px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            background-color: #A7D129;
+        }
+
+        h3{
+            margin-top: 15px;
+        }
+
+        #principalInput{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            
+            height: 400px;
+        }
+
+        #inputContainer{
+            width: 92%;
+            background-color: #616F39;
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items:center;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        h4{
+            margin: 30px;
+            margin-bottom: 10px;
+            color: #A7D129;
+            font-size: 35px;
+        }
+
+        #input{
+            width: 60%;
+            height: 25px;
+            border: 2px solid;
+            margin: 20px;
+            border-radius: 15px;
+        }
+
+        #buttonInput{
+            width: 120px;
+            height: 30px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            margin-bottom: 10px;
+            background-color: #A7D129;
+        }
+
+        #logoInput{
+            margin: 15px;
+            width: 25%;
+            height: 110px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+
+        #principalFooter{
+            margin-top: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content:space-around;
+            align-items: center;
+            height: 200px;
+            background-color: #000000;
+        }
+
+        #containerFooter{
+            display: flex;
+            flex-direction: row;
+            justify-content:space-around;
+            width: 90%;
+        }
+
+        h5{
+            padding-left: 6px;
+            font-size: 20px;
+            margin-bottom: 30px;
+            color: white;
+            font-weight: bold;
+        }
+
+        #liFooter{
+            padding: 7px;
+            justify-content:left;
+            color: white;
+        }
+
+        #seleccionTipoMoneda{
+            display: flex;
+        }
+
+        #tipoMoneda{
+            display: flex;
+            flex-direction: column;
+            margin: 15px;
+        }
+
+        #convertirButton{
+            width: 170px;
+            height: 30px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            margin-bottom: 10px;
+            background-color: #A7D129;
+        }
+
+        #Conversor{
+            display: flex;
+        }
+
+        #ConvertirMon{
+            display: flex;
+            flex-direction: column;
+            margin: 15px;
+            padding: 15px;
+            border-radius: 10px;
+            background-color: #3E432E;
+        }
+    </style>
+</head>
+<body>
+    <section id="principalMenu">
+        <div id="logo">
+            <img id="logoImg" src="https://images.pexels.com/photos/430205/pexels-photo-430205.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Logo">
+        </div>
+        <div id="menu">
+            <ul id="ulMenu">
+                <li id="liMenu">Inicio</li>
+                <li id="liMenu">Sobre Nosotros</li>
+                <li id="liMenu">Contacto</li>
+                <li id="liMenu">Portafolio</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="PrincipalMultHead">
+        <div id="containerHeadLine">
+            <h2>Servicio de Edición de Video</h2>
+            <p>Contamos con editores de video con amplia experiencia, especializados en canales de YouTube y contenido para redes sociales como Facebook e Instagram.
+                <br>El pilar de una producción audiovisual de cualquier tipo es sin duda, la edición de vídeo. Si tienes el equipo de producción audiovisual más caro, 
+                pero no realizas una buena edición de video, es muy posible que tu contenido no funcione como esperabas. Ahora bien, cuando hablamos de edición de vídeo, 
+                hablamos de creatividad mezclada con arte. Para una producción audiovisual, se suelen usar entre un 10% y un 40% del total del material grabado. 
+                El reto de la edición consiste en lograr elegir las mejores tomas, y colocarlas en el orden correcto. Parece sencillo, pero este proceso puede durar horas, 
+                incluso días.
+            </p>
+        </div>
+        <div id="containerHeadLine">
+            <h2>Conversor / 1$ = 6.96 Bs</h2>
+            <div id="Conversor">
+                <div id="ConvertirMon">
+                    <label>Bolivianos a Dolares</label>&nbsp;
+                    <input id="inputBol" type="number" placeholder="Ingresar el monto">&nbsp;
+                    <button id="convertirButton" onclick="cambioBol()"> Convertir</button>                
+                    <label id="resultadoBol"></label>
+                </div>
+    
+                <div id="ConvertirMon">
+                    <label>Dolares a Bolivianos</label>&nbsp;
+                    <input id="inputDol" type="number" placeholder="Ingresar el monto">&nbsp;
+                    <button id="convertirButton" onclick="cambioDol()"> Convertir</button>                
+                    <label id="resultadoDol"></label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="PrincipalHeadline">
+        <img id="imagenPrincipal" src="https://images.pexels.com/photos/1069798/pexels-photo-1069798.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="imagenPrincipal">
+    </section>
+    <section id="principalImagenes">
+        <div id="secImagen">
+            <img id="imagenes" src="https://images.pexels.com/photos/1162361/pexels-photo-1162361.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="imagenPrincipal">
+            <h3>Logos</h3>
+            <p>Destacamos el logo de su empresa o emprendimiento.</p>
+            <button id="buttonImage">Ver mas</button>
+        </div>
+        <div id="secImagen">
+            <img id="imagenes" src="https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="imagenPrincipal">
+            <h3>Productos</h3>
+            <p>Realizamos ediciones de imagenes de productos y servicios.</p>
+            <button id="buttonImage">Ver mas</button>
+        </div>
+        <div id="secImagen">
+            <img id="imagenes" src="https://images.pexels.com/photos/9843280/pexels-photo-9843280.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="imagenPrincipal">
+            <h3>Marcas</h3>
+            <p>Trabajamos con marcas reconocidas .</p>
+            <button id="buttonImage">Ver mas</button>
+        </div>
+    </section>
+    <section id="principalInput">
+        <div id="inputContainer">
+            <h4 id="InicioSesion">Iniciar Sesión</h4>
+            <input id="input" type="text" placeholder="Ingrese su Usuario o Email" >
+            <button id="buttonInput">Iniciar Sesión</button>
+            <img id="logoInput" src="https://images.pexels.com/photos/430205/pexels-photo-430205.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="imagenPrincipal">
+        </div>
+    </section>
+
+    <section id="principalFooter">
+        <div id="containerFooter">
+            <div>
+                <h5>Slack</h5>
+                <ul id="ulFooter">
+                    <li id="liFooter">Inicio</li>
+                    <li id="liFooter">Nosotros</li>
+                    <li id="liFooter">Nuestro Equipos</li>
+                    <li id="liFooter">Casos de Estudio</li>
+                </ul>
+            </div>
+            <div>
+                <h5>Nuestros Servicios</h5>
+                <ul id="ulFooter">
+                    <li id="liFooter">Edición</li>
+                    <li id="liFooter">Efectos</li>
+                    <li id="liFooter">Filtros</li>
+                    <li id="liFooter">Creación</li>
+                </ul></div>
+
+            <div>
+                <h5>Oficinas EEUU</h5>
+                <ul id="ulFooter">
+                    <li id="liFooter">Citigroup Center</li>
+                    <li id="liFooter">Miami, FL 33131</li>
+                </ul>
+            </div>
+
+            <div>                
+                <h5>Oficinas LATAM</h5>
+                <ul id="ulFooter">
+                    <li id="liFooter">Av. América, Edif. Terrado Empresarial - BOLIVIA</li>
+                    <li id="liFooter">Calle Asunción Edif Coronado - Paraguay</li>
+                    <li id="liFooter">Avenida Rivadeneira #354 - Ecuador</li>
+                    <li id="liFooter">Avenida Hermanos Unidos Edif Girasol - Peru</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function cambioBol(){
+        var dol = 6.96; 
+        var re ;   
+        var pe =parseInt(document.getElementById('inputBol').value, 10);
+        
+        re = pe / dol ;
+        document.getElementById('resultadoBol').innerHTML= re  + ' Dolares';
+        }
+
+        function cambioDol(){
+        var dol = 6.96; 
+        var re ;   
+        var pe =parseInt(document.getElementById('inputDol').value, 10);
+        
+        re = pe * dol ;
+        document.getElementById('resultadoDol').innerHTML= re + ' Bolivianos';
+        }
+
+        // let inputMonto = document.getElementById('inputMonto')
+        // let opcionBolivianos = document.getElementById('opcionBolivianos')
+        // let opcionDolares = document.getElementById('opcionDolares')
+        // let convertirButton = document.getElementById('convertirButton')
+        // let resultadoConversion = document.getElementById('resultadoConversion')        
+
+        // opcionBolivianos.addEventListener('click', cambioBotonBs)
+        // opcionDolares.addEventListener('click', cambioBotonDol)
+        // convertirButton.addEventListener('click', convertir)
+        
+
+        // function cambioBotonBs(){
+        //     convertirButton.innerHTML = 'Convertir a Dolares'
+        // }
+
+        // function cambioBotonDol(){
+        //     convertirButton.innerHTML = 'Convertir a Bolivianos'
+        // }
+
+        // function convertir() {
+        //     document.getElementById("resultadoConversion").innerHTML = inputMonto * 2.2046;
+        //     document.getElementById("Ounces").innerHTML =
+        //     inputMonto * 35.274;
+        //     document.getElementById("Grams").innerHTML =
+        //     inputMonto * 1000;
+        //     document.getElementById("Stones").innerHTML =
+        //     inputMonto * 0.1574;
+        // }
+
+
+
+        function convertir(){            
+            if(opcionBolivianos.check)
+            {
+                let valor = parseFloat(inputMonto) * 2.2046;
+            }
+            else
+            {
+                let valor = parseFloat(inputMonto) * 2.2046;
+            }
+            resultadoConversion.innerHTML = valor
+
+        }
+
+
+
+        let ejer1 = document.getElementById('buttonInput')
+        ejer1.addEventListener('click', ejercicio1)
+
+        function ejercicio1(){
+            let entrada = document.getElementById('input')
+            let mensaje = document.getElementById('InicioSesion')
+
+            if(entrada.value == ''){
+                mensaje.innerHTML = 'Iniciar Sesión'
+            }else{
+                mensaje.innerHTML = 'Bienvenido ' + entrada.value
+                entrada.value = ''
+            }
+        }
+    </script>
+</body>
+</html>
