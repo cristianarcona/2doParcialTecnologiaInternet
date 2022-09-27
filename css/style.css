@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #3E432E;
+    color:white
+}
+
+#principalMenu{
+    width: 100%;
+    background-color: #000000;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;    
+    position:fixed;
+    top:0;
+    height: 60px;
+}
+
+.buttonMenu :hover{
+    cursor: pointer;
+    color: #A7D129;
+    }
+
+#logo{
+    margin: 15px;
+    width: 15%;
+    height: 50px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logoImg{
+    width: 100%;
+    height: 100%;
+}
+#menu{
+    width: 70%;
+    margin-left: 250px;
+    margin-right: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.buttonMenu{
+    background-color: #3E432E;
+    list-style: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    width: 130px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+}
+
+.linkMenu{
+    color: white;
+
+}
+/* #ulMenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#liMenu{
+    list-style: none;
+    color: white;
+    background-color: #3E432E;
+    font-weight: bold;
+    padding: 10px;
+    width: 130px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+} */
+
+#PrincipalMultHead{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    margin-top: 60px;
+}
+
+#containerHeadLine{
+    padding: 25px;
+    margin: 20px;
+    background-color: #616F39;
+    width: 620px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+h2{
+    padding-top: 30px;
+    padding-bottom: 15px;
+    color: black;
+}
+
+p{
+    padding-top: 15px;
+    padding-bottom: 30px;
+    color: black;
+}
+
+#PrincipalHeadline, #PrincipalHeadline2{
+    display: flex;
+    justify-content: center;
+    height: 650px;
+    margin-top: 65px;
+}
+
+#PrincipalHeadline2{
+    height: 450px;
+    margin-top: 60px;
+    width: 100%;
+}
+
+#imagenPrincipal, #imagenPrincipal2{
+    height: 100%;
+    width: 90%;
+    border-radius: 5px;
+    border: solid 3px #616F39;
+}
+
+#imagenPrincipal2{
+    width: 100%;
+    border-radius: 0;
+    border: none;
+}
+
+#principalImagenes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#imagenes{
+    height: 180px;
+    width: 180px;
+    background-color: white;
+    border-radius: 40px;
+    border: solid 1px #A7D129;
+}
+
+#secImagen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: #616F39;
+    margin: 25px;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+#secImagen2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: #616F39;
+    margin: 25px;
+    width: 36%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+#buttonImage{
+    width: 120px;
+    height: 30px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    background-color: #A7D129;
+}
+
+h3{
+    margin-top: 15px;
+}
+
+#principalInput{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    height: 400px;
+}
+
+#inputContainer{
+    width: 92%;
+    background-color: #616F39;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+h4{
+    margin: 30px;
+    margin-bottom: 10px;
+    color: #A7D129;
+    font-size: 35px;
+}
+
+#input{
+    width: 60%;
+    height: 25px;
+    border: 2px solid;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+#buttonInput{
+    width: 120px;
+    height: 30px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+    background-color: #A7D129;
+}
+
+#logoInput{
+    margin: 15px;
+    width: 25%;
+    height: 110px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+#principalFooter{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    height: 200px;
+    background-color: #000000;
+}
+
+#containerFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    width: 90%;
+}
+
+h5{
+    padding-left: 6px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+#liFooter{
+    padding: 7px;
+    justify-content:left;
+    color: white;
+}
+
+#seleccionTipoMoneda{
+    display: flex;
+}
+
+#tipoMoneda{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+#convertirButton{
+    width: 170px;
+    height: 30px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+    background-color: #A7D129;
+}
+
+#Conversor{
+    display: flex;
+}
+
+#ConvertirMon{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #3E432E;
+}
+
+#principalSobreNosotros{
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+#ol3{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+#contactanos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#divContactanos, #divMensajeContactanos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    padding: 30px;
+    background-color: #616F39;
+    margin: 25px;
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    color: gainsboro;
+}
+
+#divMensajeContactanos p{
+    color: white;
+    font-size: larger;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.textAreaConocenos{
+    width: 100%;
+    background-color:  gainsboro;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+#datos{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:flex-start;
+    width: 100%;
+}
+
+#datos2{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    border-radius: 10px;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <section id="principalMenu">
+        <div id="logo">
+            <img id="logoImg" src="https://images.pexels.com/photos/430205/pexels-photo-430205.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Logo">
+        </div>
+        <div id="menu">
+            <button class="buttonMenu"><a class="linkMenu" href="./index.html">Inicio</a></button>
+            <button class="buttonMenu"><a class="linkMenu" href="./servicio.html">Servicios</a></button>
+            <button class="buttonMenu"><a class="linkMenu" href="./sobreNosotros.html">Sobre Nosotros</a></button>
+            <button class="buttonMenu"><a class="linkMenu" href="./contacto.html">Contáctanos</a></button>
+        </div>
+    </section>
+    
+    <section id="PrincipalHeadline2">
+        <img id="imagenPrincipal2" src="https://opnco.net/wp-content/uploads/2021/09/Contact-Us-banner_1586952394-1.jpg" alt="imagenPrincipal">
+    </section>
+    <section id="contactanos">
+        <div id="divContactanos">
+            <h3>Deja un comentario y nos pondremos en contacto lo antes posible</h3>&nbsp;
+            <label>Nombre*</label>&nbsp;
+            <input class="textAreaConocenos" id="nombreMensaje" style="height: 25px;" type="multiline">
+            <label>Correo Electrónico*</label>&nbsp;
+            <input class="textAreaConocenos" id="emailMensaje" style="height: 25px;"  type="multiline">
+            <label>Mi comentario es ...</label>&nbsp;
+            <textarea name="comment" class="textAreaConocenos" id="contenidoMensaje" cols="45" rows="8"></textarea>
+            <!-- <div id="datos">
+                <div id="datos2">
+                    <label>Nombre*</label>
+                    <input id="textAreaConocenos" type="multiline">
+                </div>
+                <div id="datos2">                    
+                    <label>Correo Electrónico*</label>
+                    <input id="textAreaConocenos" type="multiline">
+                </div>
+            </div>&nbsp; -->
+            <button id="buttonImage" onclick="guardar()">Enviar comentario</button>
+        </div>
+        <div id="divMensajeContactanos" style="display: none;">
+            <p>Gracias por tu comentario, nos pondremos en contacto lo mas antes posible.</p>
+        </div>        
+    </section>
+
+    <section id="principalFooter">
+        <div id="containerFooter">
+            <div>
+                <h5>Slack</h5>
+                <ul id="ulFooter">
+                    <li id="liFooter">Inicio</li>
+                    <li id="liFooter">Nosotros</li>
+                    <li id="liFooter">Nuestro Equipos</li>
+                    <li id="liFooter">Casos de Estudio</li>
+                </ul>
+            </div>
+            <div>
+                <h5>Nuestros Servicios</h5>
+                <ul id="ulFooter">
+                    <li id="liFooter">Edición</li>
+                    <li id="liFooter">Efectos</li>
+                    <li id="liFooter">Filtros</li>
+                    <li id="liFooter">Creación</li>
+                </ul></div>
+
+            <div>
+                <h5>Oficinas EEUU</h5>
+                <ul id="ulFooter">
+                    <li id="liFooter">Citigroup Center</li>
+                    <li id="liFooter">Miami, FL 33131</li>
+                </ul>
+            </div>
+
+            <div>                
+                <h5>Oficinas LATAM</h5>
+                <ul id="ulFooter">
+                    <li id="liFooter">Av. América, Edif. Terrado Empresarial - BOLIVIA</li>
+                    <li id="liFooter">Calle Asunción Edif Coronado - Paraguay</li>
+                    <li id="liFooter">Avenida Rivadeneira #354 - Ecuador</li>
+                    <li id="liFooter">Avenida Hermanos Unidos Edif Girasol - Peru</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script src="./js/contactanos.js"></script>
+    <script src="./js/contactanosdb.js"></script>
+</body>
+</html>
